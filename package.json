@@ -1,0 +1,29 @@
+{
+    "name": "stravastrivemiddleware",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "format": "prettier --write \"src/**/*.{js,json}\"",
+      "lint": "eslint src/**",
+      "start": "nodemon src/server.js",
+      "start:development": "cross-env NODE_ENV=development nodemon src/server.js",
+      "start:production": "cross-env NODE_ENV=production nodemon src/server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.27.2",
+      "express": "^4.18.1"
+    },
+    "devDependencies": {
+      "cross-env": "^7.0.3",
+      "eslint": "^8.14.0",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-react": "^7.29.4",
+      "nodemon": "^2.0.16",
+      "prettier": "2.6.2"
+    }
+  }
